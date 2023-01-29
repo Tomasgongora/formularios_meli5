@@ -1,0 +1,153 @@
+@import url('styles.css');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: darkblue;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+hr{
+    background: linear-gradient(90deg, black, white);
+    height: 3px;
+    margin-bottom: 3rem;
+}
+div.form-container{
+    padding: 2rem 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-box .avatar {
+    width: 10rem;
+    height: 10rem;
+    background-color: thistle;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.input-file-container{
+    margin: 1rem 0;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0 2px;
+}
+.input-container-fecha{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    width: 100%;
+    padding: 0 2px;
+}
+.button-container{
+    display: flex;
+
+}
+span.error-message{
+    display: none;
+    color: tomato;
+    font-size: .7rem;
+}
+.check-interest {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.check-interest div{
+    padding-bottom: 10px;
+}
+div.form span a{
+    display: flex;
+    justify-content: center;
+}
+
+input.input-style{
+    border: none;
+    border-radius: 0.2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    outline: none;
+
+}
+input.input-style::placeholder{
+    color: lightgray;
+}
+
+@media (min-width: 992px) {
+
+    .input-file-container {
+        max-width: 300px;
+    }
+  
+    .form-container {
+        width: 90%;
+    }
+
+    .profile-form {
+        height: 240px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .button-container {
+        flex-direction: row;
+        margin-top: 2rem;
+        gap: 20px;
+        align-items: center;
+    }
+    .check-interest{
+        display: flex;
+        flex-direction: row;
+    }
+    .fecha{
+        margin-top: 9px;
+    }
+    .fecha1{
+        margin-bottom: 9px;
+    }
+    .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-radio-container{
+        margin-bottom: 9px;
+    }
+    .register .input-container-fecha{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2px;
+    margin-bottom: none;
+    }
+    .input-container-fecha label{
+        margin: 7px 0 14px 0;
+    }
+    .interest-container h4{
+        margin-top: 5px;
+    }
+
+
+}

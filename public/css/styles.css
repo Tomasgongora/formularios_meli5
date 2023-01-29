@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+@import url("login.css");
+@import url("register.css");
+
+
+:root {
+    /* VARIABLES DE COLORES */
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a; 
+    /*Fuentes*/
+    --fuente: 'Roboto', sans-serif;
+    /*TAMAÑOS TIPOGRAFICOS*/
+    --parrafos: 12px;
+    --titulos: 24px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripcion: 16px;
+    
+}
+
+/*GENERALES*/
+
+/* img {
+    width: 100%;
+    height: 100%;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: var(--gris-claro);
+    font-family: var(--fuente);
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+li {
+    list-style: none;
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--amarillo);
+    padding: 15px;
+}   
+
+
+
+header div.top_bar {
+    display:flex;
+} 
+
+header div.top_bar a {
+    flex-grow: 0.5;
+}  
+
+header div.busqueda {
+    display: flex;
+    padding: 15px 0;
+    flex-grow: 0.5;
+} 
+
+header button.button {
+    font-size: 15px;
+    height: 50px;
+    width: 40px;
+}
+
+header input.search {
+    font-size: 15px;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+} 
+
+header h2.titulo_compra {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+header .logo {
+    width: 250px;
+} 
+
+header nav {
+    display: none;
+}
+
+header nav ul li a {
+    font-size: var(--parrafos);
+}
+ 
+header div.burger-menu {
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: white;
+    width: 30px;
+    padding: 7px;
+    margin: 25px auto 0;
+}
+
+/*MAIN*/
+
+main {
+    width: 90%;
+    margin: auto;
+}  
+
+main section.home_section-productos {
+    position: relative;
+}
+
+section div.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+  }
+    
+img.banner {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+main section h4 {
+   
+    margin-left: 40px;
+    color: var(--gris-oscuro);
+    font-size: var(--titulos);
+    position: absolute;
+    left: 100px;
+  }
+
+
+section div.product-container article.seccion__productos-tarjetas {
+    border: 1px solid var(--Gris-claro);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+
+section div.product-container article.seccion__productos-tarjetas div.producto {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px 15px 5px 15px;
+  }
+
+
+main section article {
+    background-color: white;
+    margin-bottom: 10px;
+}
+main section article div.producto {
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+}
+
+div.producto {
+    color: var(--gris-oscuro);
+}
+
+/*SECCIONES*/
+
+/*PRODUCTOS*/
+
+main section article div.envio {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 2rem;
+    height: 2rem;
+    color: var(--verde);
+    border: 1px solid var(--verde);
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    top: -15px;
+} 
+
+main section article p.precio {
+font-size: var(--precio);
+width: 100px;
+}
+
+main section .precio_descuento {
+    display: flex;
+    
+}
+
+main section article p.precio {
+    display: flex;
+    padding-bottom: 1rem;
+    
+    
+}
+
+main section article p.descuento {
+    font-size: var(--descuento);
+    color: var(--verde);
+    
+}
+
+main section article div.producto {
+    position: relative;
+   
+}
+
+section div.product-container article.seccion__productos-tarjetas div.product-img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 0.5rem;
+}
+div.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: white;
+}
+
+footer article {
+    text-align: center;
+    padding: 15px 50px;
+    margin-bottom: 15px;
+}
+
+footer article i {
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 15px;
+}
+
+footer article h4 {
+    font-size: var(--titulos);
+}
+
+footer p.copy {
+    text-align: center;
+}
+
+@media (min-width: 769px) {
+    header div.buqueda {
+        flex-grow: 0.5px;
+    }
+
+    header input.search {
+        height: 30px;
+        width: 200px;
+    }
+
+    header button.button {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+    }
+    main section.home_section-productos {
+        position: relative;
+    }
+
+    main section h4 {
+       position: absolute;
+       left: 35px;
+    }
+
+
+    header .main_header_top_bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header div.top_bar {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+    } 
+
+    header h2.titulo_compra {
+        max-width: 350px;
+        text-align: right;
+
+    }
+
+    header div.burger-menu {
+        display: none;
+  }
+
+  header nav.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav.nav-bar ul {
+    display: flex;
+}
+
+header nav.nav-bar li {
+    margin: 0 5px;
+}
+
+section div.product-container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+    header div.logo {
+        width: 350px;
+    }
+
+    header div.top_bar, header nav.nav-bar  {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    header div.top_bar {
+        align-items: center;
+    }
+
+    header nav.nav-bar {
+        margin-top: 50px;
+    }
+
+    header nav.nav-bar li {
+        margin: 0 10px;
+    }
+
+    header nav.nav-bar a {
+        font-size: 19px;
+    }
+
+    header h2.titulo_compra {
+        margin: 0;
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+
+
+ 
