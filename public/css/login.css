@@ -69,3 +69,7 @@ input.input-style{
 input.input-style::placeholder{
     color: lightgray;
 }
+
+footer p.copy {
+    text-align: center;
+}

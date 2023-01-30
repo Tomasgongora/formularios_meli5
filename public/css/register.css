@@ -94,6 +94,9 @@ input.input-style::placeholder{
     color: lightgray;
 }
 
+footer p.copy {
+    text-align: center;
+}
 @media (min-width: 992px) {
 
     .input-file-container {
